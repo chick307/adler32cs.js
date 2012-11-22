@@ -1,0 +1,6 @@
+{
+	"name": "adler32cs",
+	"version": "0.0.0",
+	"main": "adler32cs.js",
+	"dependencies": {}
+}
