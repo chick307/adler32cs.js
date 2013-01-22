@@ -2,7 +2,7 @@
 	"author": "chick307 <chick307@gmail.com>",
 	"name": "adler32cs",
 	"description": "Adler32 checksum library for JavaScript.",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"main": "adler32cs.js",
 	"scripts": {
 		"test": "node_modules/.bin/mocha"
