@@ -21,11 +21,11 @@ void function(global, callback) {
 		if (!_hasArrayBuffer)
 			return function _isBuffer() { return false };
 
-		if (typeof require === 'function') {
+		try {
 			var buffer = require('buffer');
-			if (buffer != null && typeof buffer.Buffer === 'function')
+			if (typeof buffer.Buffer === 'function')
 				_Buffer = buffer.Buffer;
-		}
+		} catch (error) {}
 
 		return function _isBuffer(value) {
 			return value instanceof ArrayBuffer ||
