@@ -8,8 +8,6 @@
 void function(global, callback) {
 	if (typeof module === 'object') {
 		module.exports = callback();
-	} else if (typeof define === 'function') {
-		define(callback);
 	} else {
 		global.adler32cs = callback();
 	}
