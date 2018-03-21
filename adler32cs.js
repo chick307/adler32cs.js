@@ -9,7 +9,7 @@ void function(global, callback) {
 	if (typeof module === 'object') {
 		module.exports = callback();
 	} else if (typeof define === 'function') {
-		define(callback);
+		define('adler32cs', [], callback);
 	} else {
 		global.adler32cs = callback();
 	}
