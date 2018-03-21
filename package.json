@@ -23,5 +23,6 @@
 	},
 	"jam": {
 		"dependencies": {}
-	}
+	},
+	"license": "MIT"
 }
